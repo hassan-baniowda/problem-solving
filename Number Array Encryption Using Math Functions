@@ -1,0 +1,43 @@
+# include <iostream>
+using namespace std;
+
+int multiply (int a,int b)
+{
+	return a*b;
+}
+void arrayencrypted(int array [],int thesize)
+{
+	for (int j=0;j<thesize;j++)
+	{
+		int x=array[j];
+		
+		int result=multiply(x,3);
+		
+		array[j]=result;
+	}
+	
+	
+}
+
+main()
+{
+	int thesize;
+	cout<<"Enter the size of the array "<<endl;
+	cin>>thesize;
+	int array [thesize];
+	cout <<"Enter the array elements"<<endl;
+	for (int n=0;n<thesize;n++)
+	{
+		cin>>array[n];
+	}
+	
+	arrayencrypted( array ,thesize);
+	cout <<"Array elements after encryption "<<endl;
+	
+	for (int n=0;n<thesize;n++)
+	{
+		cout<<array[n]<<" ";
+	}
+	cout <<endl;
+	
+}
