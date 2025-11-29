@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+ 
+    int w,k,n;
+    cin>>k;
+    cin>>n;
+    cin>>w;
+    int c=0;
+    for(int i=1;i<=w;i++)
+        c+=i*k;
+    if(n-c>0)
+        cout<<'0'<<endl;
+    else cout<<c-n<<endl;
+ 
+}
