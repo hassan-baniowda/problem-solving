@@ -1,0 +1,26 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+      int n;
+ 
+      int k;
+      int c=0;
+      cin>>n;
+      int a[n];
+      cin>>k;
+ 
+      if(k<=n&&k>0){
+      for(int i=0;i<n;i++){
+        cin>>a[i];
+      }
+      for(int j=0;j<n;j++){
+        if(a[k-1]<=a[j]&&a[j]>0)
+            c++;
+      }
+ 
+      }
+      cout<<c<<endl;
+ }
