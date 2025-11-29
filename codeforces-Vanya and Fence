@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+int n;
+cin>>n;
+int h;
+cin>>h;
+int c=0;
+int a[n];
+for(int i=0;i<n;i++)
+    cin>>a[i];
+for(int i=0;i<n;i++){
+    if(a[i]<=h)
+        c++;
+    else c+=2;
+}
+cout<<c<<endl;
+ 
+}
