@@ -1,0 +1,132 @@
+# include <iostream.h>
+  int add(int a,int b)
+  {
+      cin>>a>>b;
+      return a+b;
+  }
+  int sub(int a,int b)
+  {
+      cin>>a>>b;
+      return a-b;
+  }
+  int multyply(int a,int b)
+  {
+      cin>>a>>b;
+      return a*b;
+  }
+  int divv(int a,int b)
+  {
+      cin>>a>>b;
+      return a/b;
+  }
+  int square(int a)
+  {
+      cin>>a;
+      return a*a;
+  }
+  int cube(int a)
+  {
+      cin>>a;
+      return a*a*a;
+  }
+ int fact (int a,int b)
+  {
+  int f=1;
+  for (int i=1;i<=b;i++)
+  f=f*i;
+  return f;
+  }
+  int even( int a)
+  {
+  	int c=0;
+  	cin >>a;
+  	if (a%2==0)
+  	c=0;
+  	else 
+  	c=c+1;
+  	return c;
+  	
+  }
+  int prime(int a)
+  {
+  	int c=0;
+  	cin >>a;
+  	for (int i=1;i<=a;i++)
+  	if (a%i==0)
+  	c++;
+  	return c;
+  	
+  }
+  int avg (int a,int b)
+  {
+  cin>>a>>b;
+
+
+  return (a+b)/2;
+  }
+  int max(int a,int b)
+  {
+  	int f=0;
+      cin>>a>>b;
+      if (a>b)
+      f=f+1;
+      return f;
+  }
+  int min(int a,int b)
+  {
+  	int f=0;
+      cin>>a>>b;
+      if (a<b)
+      f=f+1;
+      return f;
+  }
+  int areacircle(int a)
+  {
+      cin>>a;
+      return (3.14*(a*a));
+  }
+  int areatriangle(int a,int b)
+  {
+      cin>>a>>b;
+      return (0.5*a*b);
+  }
+  
+  
+
+
+
+
+ int main()
+  {
+      int a,b;
+      cout <<"the sumation is "<<add(a,b)<<endl;
+      cout <<"subtraction result is "<<sub(a,b)<<endl;
+      cout <<"the multyply is "<<multyply(a,b)<<endl;
+      cout <<"the quotient is "<<divv(a,b)<<endl;
+      cout <<"the square is "<<square(a)<<endl;
+      cout <<"the cube size is "<<cube(a)<<endl;
+      cout <<"the fact is "<<fact(a,b)<<endl;
+      if (even(a)==0)
+      cout <<"the number is even "<<endl;
+      else 
+      cout <<"the numberis odd "<<endl;
+      if (prime(a)==2)
+      cout <<"the numberis prime "<<endl;
+      else 
+      cout <<"the numberis not prime "<<endl;
+      cout <<"the average is "<<avg(a,b)<<endl;
+      if (max(a,b)==1)
+      cout <<a<<"is max "<<endl;
+      else 
+      cout <<b<<"is the max "<<endl;
+      if (min(a,b)==1)
+      cout <<a<<"is min "<<endl;
+      else 
+      cout <<b<<"is the min "<<endl;
+      cout <<"areacircle "<<areacircle(a)<<endl;
+      cout <<"areatriangle "<<areatriangle(a,b)<<endl;
+
+
+
+
+  }
